@@ -18,9 +18,8 @@ class Catalogo {
     mostrarProductos(categoria) {
         const catalogoDiv = document.getElementById('productos');
         // Limpiar el contenido actual
-        while (catalogoDiv.firstChild) {
-            catalogoDiv.removeChild(catalogoDiv.firstChild);
-        }
+        catalogoDiv.innerHTML = '';
+        
         const productosFiltrados = this.filtrarProductos(categoria);
 
         productosFiltrados.forEach(producto => {
@@ -41,8 +40,7 @@ class Catalogo {
 
             // Agregar boton del carrito
             const agregarBoton = document.createElement('button');
-            agregarBoton.classList.add('btn');
-            agregarBoton.classList.add('btn-outline-success');
+            agregarBoton.classList.add('btn', 'btn-outline-success');
             agregarBoton.textContent = 'Agregar al carrito';
             agregarBoton.addEventListener('click', () => {
                 this.carrito.agregarProducto(producto);
@@ -58,4 +56,5 @@ class Catalogo {
             // Agregar el div del producto al contenedor del catálogo
             catalogoDiv.appendChild(productoDiv);
         });
-}}
+    }
+}

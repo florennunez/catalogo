@@ -1,40 +1,10 @@
 class Carrito {
     constructor() {
         this.items = [];
-        this.contadorCarrito = document.getElementById('notificacion'); 
-        //el contador puede ir dentro o fuera
-        this.contadorCarrito = 0;
+        this.contadorCarrito = document.getElementById('notificacion');
+        this.contador = 0;
     }
 
-    //agrego metodo para mostrar notificacion
-    agregarItem(item){
-        //actualizo el contador
-        this.items.push(item);
-        this.actualizarCarrito();
-        this.actualizarNotificacion();
-    }
-
-    actualizarNotificacion(){
-        if (this.items.length > 0) {
-            this.contadorCarrito.style.display = 'block';
-            this.contadorCarrito.innerHTML = this.items.length;
-        } else {
-            this.contadorCarrito.style.display = 'none';
-        }
-    }
-    
-    mostrarNotificacion(contador) {
-        const notificacion = document.getElementById('notificacion')
-        if (contador === 0) {
-            notificacion.style.display = 'none';
-        }
-        else {
-            notificacion.style.display = 'block';
-            notificacion.innerHTML = contador;
-        }
-    }
-
-    //Agrega los productos al carrito
     agregarProducto(producto) {
         const index = this.items.findIndex(item => item.nombre === producto.nombre);
         if (index === -1) {
@@ -43,12 +13,19 @@ class Carrito {
             this.items[index].cantidad += 1;
         }
         this.actualizarCarrito();
-        /* const itemsLength = this.contadorCarrito.textContent = this.items.length 
-        this.mostrarNotificacion(itemsLength); */
         this.actualizarNotificacion();
     }
 
-    actualizarCarrito() { 
+    actualizarNotificacion() {
+        if (this.items.length > 0) {
+            this.contadorCarrito.style.display = 'block';
+            this.contadorCarrito.innerHTML = this.items.length;
+        } else {
+            this.contadorCarrito.style.display = 'none';
+        }
+    }
+
+    actualizarCarrito() {
         const carritoDiv = document.getElementById('carrito');
         carritoDiv.innerHTML = '';
         let totalPrecio = 0;
@@ -68,7 +45,7 @@ class Carrito {
             itemDiv.appendChild(cantidadEl);
             itemDiv.appendChild(precioEl);
             carritoDiv.appendChild(itemDiv);
-        }); 
+        });
 
         const totalPrecioDiv = document.createElement('div');
         totalPrecioDiv.classList.add('total', 'mt-3');
