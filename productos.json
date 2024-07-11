@@ -1,0 +1,75 @@
+
+[
+    {
+        "nombre": "Node js", 
+        "descripcion": "Taza apilable", 
+        "precio": 6000, "imagen": "images/taza_node.jpg", 
+        "categoria": "Plastico"
+    },
+    {
+        "nombre": "React", 
+        "descripcion": "Taza apilable", 
+        "precio": 6000, "imagen": "images/taza_react.jpg", 
+        "categoria": "Plastico"
+    },
+    {
+        "nombre": "Qué mira, bobó", 
+        "descripcion": "Chop personalizado de 500 ml", 
+        "precio": 6000, "imagen": "images/QUE-MIRA-BOBO.jpg", 
+        "categoria": "Plastico"
+    },
+    {
+        "nombre": "Basica", 
+        "descripcion": "Ranglan gris mangas negras diseño personalizado", 
+        "precio": 8600, "imagen": "images/remera_generica.jpg", 
+        "categoria": "Textil"
+    },
+    {
+        "nombre": "Buzo", 
+        "descripcion": "Buzo gris con capucha diseño personalizado", 
+        "precio": 8600, "imagen": "images/buzo.png", 
+        "categoria": "Textil"
+    },
+    {
+        "nombre": "Latinoamerica", 
+        "descripcion": "Ranglan gris mangas negras diseño personalizado", 
+        "precio": 8600, "imagen": "images/Ranglan_americaLatina.jpg", 
+        "categoria": "Textil"
+    },
+    {
+        "nombre": "Soy una taza Morty", 
+        "descripcion": "Ranglan gris mangas negras diseño personalizado", 
+        "precio": 6000, "imagen": "images/converti.png", 
+        "categoria": "Plastico"
+    },
+    {
+        "nombre": "Anda maquina", 
+        "descripcion": "Ranglan gris mangas negras diseño personalizado", 
+        "precio": 9000, "imagen": "images/Anda_maquina.jpg", 
+        "categoria": "Textil"
+    },
+    {
+        "nombre": "Soy un pepinillo Morty", 
+        "descripcion": "Taza de cerámica con sublimación personalizada", 
+        "precio": 6000, "imagen": "images/rick.jpg", 
+        "categoria": "Plastico"
+    },
+    {
+        "nombre": "Bandeja", 
+        "descripcion": "Bandejas de 20x20 cm personalizadas", 
+        "precio": 4800, "imagen": "images/BANDEJA-PARA-SUBLIMACION.jpg", 
+        "categoria": "Madera"
+    },
+    { 
+        "nombre": "Chapita hueso", 
+        "descripcion": "distintivo para tu mascota", 
+        "precio": 1100, "imagen": "images/Llavero-Hueso.png", 
+        "categoria": "Madera"
+    },
+    {
+        "nombre": "Destapa botellas", 
+        "descripcion": "Llaveros de madera personalizados para dos", 
+        "precio": 2900, "imagen": "images/Llaveros.JPG", 
+        "categoria": "Madera"
+    }
+]
