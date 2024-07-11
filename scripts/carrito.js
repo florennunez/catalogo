@@ -2,7 +2,6 @@ class Carrito {
     constructor() {
         this.items = [];
         this.contadorCarrito = document.getElementById('notificacion');
-        this.contador = 0;
     }
 
     agregarProducto(producto) {
@@ -17,9 +16,10 @@ class Carrito {
     }
 
     actualizarNotificacion() {
-        if (this.items.length > 0) {
+        const totalItems = this.items.reduce((total, item) => total + item.cantidad, 0);
+        if (totalItems > 0) {
             this.contadorCarrito.style.display = 'block';
-            this.contadorCarrito.innerHTML = this.items.length;
+            this.contadorCarrito.innerHTML = totalItems;
         } else {
             this.contadorCarrito.style.display = 'none';
         }

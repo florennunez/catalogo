@@ -17,4 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
             catalogo.mostrarProductos(categoria);
         });
     });
+
+    function mostrarNotificacion() {
+        carrito.actualizarNotificacion();
+    }
+
+    document.querySelector('button[onclick="mostrarNotificacion()"]').addEventListener('click', mostrarNotificacion);
 });
