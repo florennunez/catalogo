@@ -71,5 +71,41 @@
         "descripcion": "Llaveros de madera personalizados para dos", 
         "precio": 2900, "imagen": "images/Llaveros.JPG", 
         "categoria": "Madera"
+    },
+    {
+        "nombre": "Mate", 
+        "descripcion": "Mate personalizado", 
+        "precio": 5000, "imagen": "images/Llaveros.JPG", 
+        "categoria": "Plastico"
+    },
+    {
+        "nombre": "Jarra", 
+        "descripcion": "jarrito de polimero", 
+        "precio": 6000, "imagen": "images/Llaveros.JPG", 
+        "categoria": "Plastico"
+    },
+    {
+        "nombre": "Vaso de Cafe", 
+        "descripcion": "Vasito de polimero para cafe, viene con tapa", 
+        "precio": 2900, "imagen": "images/Llaveros.JPG", 
+        "categoria": "Plastico"
+    },
+    {
+        "nombre": "Llavero Circulo", 
+        "descripcion": "pack por diez llaveros de plastico", 
+        "precio": 2900, "imagen": "images/Llaveros.JPG", 
+        "categoria": "Plastico"
+    },
+    {
+        "nombre": "Llavero Corazon", 
+        "descripcion": "Pack por diez llaveros con forma de corazon corazon", 
+        "precio": 2900, "imagen": "images/Llaveros.JPG", 
+        "categoria": "Madera"
+    },
+    {
+        "nombre": "Destapa botellas", 
+        "descripcion": "Llaveros de madera personalizados para dos", 
+        "precio": 2900, "imagen": "images/Llaveros.JPG", 
+        "categoria": "Madera"
     }
 ]
